@@ -154,6 +154,7 @@ body {
     top: 60px;
     background-color: #1a1a1a;
     color: white;
+    cursor: pointer;
 
 }
 
@@ -191,29 +192,192 @@ body {
 
 }
 
-.officedescription_2 h6 {
-    background-color: rgb(219, 219, 219);
-    padding: 5px;
-    border-radius: 5px;
+.tripmaincontainer_1 {
+    display: flex;
+    width: 1200px;
+    gap: 25px;
+    background-color: rgb(232, 232, 232);
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.tripmaincontainer .tripmaincontainer_1 .tripimagecontainer img {
+    width: 180px;
+    height: 180px;
+    transform: rotate(-2deg);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 30px;
+}
+
+.Readnow {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    /* height: 50px; */
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 25px;
+
+}
+
+.Readnow:hover {
+    background-color: rgb(1, 53, 18);
+    color: rgb(255, 255, 255);
+}
+
+.trh6 {
+    background-color: rgb(184, 184, 184);
+    padding: 10px;
+    border-radius: 10px;
     display: inline;
 }
 
-.officedescription button {
-    padding: 20px;
-    background-color: lightgray;
-    border: solid black 1px;
-    border-radius: 30px;
+.trp {
+    flex-wrap: wrap;
+    padding: 15px;
+    /* font-size: 10px; */
 }
 
-.officedescription_container {
-    display: flex;
-    width:60% ;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightgray;
+.trh2 {
+    font-weight: 10px;
+    color: #1a1a1a;
+    margin-top: 60px;
 }
 
-.overallcontainerofficedescription {
+.tripmaincontainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.Explore {
+    margin-top: 8px;
+    /* margin-left: 25px; */
+    position: relative;
+    left: 150px;
+    gap: 10px;
+}
+
+.Exploredescription {
+    width: 280px;
+    height: 280px;
+    gap: 50px;
+
+
+}
+
+.Exploreimagecontainer_1 {
+    /* width: 1200px; */
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Exploreimagecontainer_1 .Exploredescription img {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+}
+
+.Exploreimagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-top: 10px;
+}
+
+.frgnmaincontainer_1 {
+    display: flex;
+    margin: 10px;
+    padding: 25px;
+    gap: 30px;
+    width: 1200px;
+    background-color: rgb(207, 206, 206);
+    border-radius: 15px;
+}
+
+.frgnmaincontainer {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.frgnmaincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    clear: both;
+
+}
+
+.fimage {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-3deg);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.fh2 {
+    margin-top: 25px;
+}
+
+.fbutton {
+    padding: 10px;
+    width: 100px;
+    border: solid black 1px;
+    border-radius: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.fbutton:hover {
+    color: white;
+    background-color: #003809;
+}
+
+.landscapeimagecontainer_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.Landimagecontainer img {
+    width: 350px;
+    height: 250px;
+}
+
+.Landimagecontainer {
+    width: 350px;
+    height: 250px;
+    text-align: center;
+}
+
+.Landimagecontainer p:hover {
+    color: #003809;
+    cursor: pointer;
+
+}
+
+
+.lndmaincontr {
+    background-color: rgb(220, 220, 220);
+    margin-top: 30px;
+    justify-content: center;
+    height: 350px;
+    padding: 15px;
+}
+
+.lndmaincontr h2 {
+    position: relative;
+    left: 14%;
+
 }
