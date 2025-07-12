@@ -200,6 +200,7 @@ body {
     bottom: 10px;
     padding: 10px;
     color: white;
+    font-size: 18px;
 
 }
 
@@ -412,9 +413,235 @@ body {
     gap: 25px;
     justify-content: center;
 }
-.thh2{
+
+.thh2 {
     margin-left: 12%;
 }
-.thp{
+
+.thnp {
     margin-left: 12%;
+    font-size: 15px;
+}
+
+.thnghmainercontainer {
+    margin-top: 30px;
+}
+
+.wedimagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* .wedimage_1{
+    width: 280px;
+    height:100%;
+    flex-wrap: wrap; */
+
+}
+
+.wedimage_1 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.wedmain {
+    margin-top: 5%;
+}
+
+.wedmain h1 {
+    margin-left: 11%;
+}
+
+.wedmain h3 {
+    margin-left: 11%;
+}
+
+.yh2 {
+    margin-top: 10px;
+    margin-left: 11%;
+}
+
+.yh3 {
+    margin-top: 10px;
+    margin-left: 11%;
+}
+
+.Yournxttrip {
+    margin-top: 50px;
+}
+
+.Yournxttrip h1,
+h3 {
+    margin-top: 15px;
+}
+
+.Yournxttrip .tripcoverimages {
+    margin-top: 15px;
+}
+
+.ich2 {
+    margin-left: 11%;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.watchimagecontainer_1 img {
+    width: 500px;
+    height: 500px;
+}
+
+.watchimagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    width: 1150px;
+    padding: 25px;
+    gap: 30px;
+}
+
+.watchmaincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.watchmaincontainer button {
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 150px;
+
+}
+
+.watchmaincontainer button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #003809;
+}
+
+.watchimagecontainer_1 p {
+    margin-top: 15px;
+}
+
+.watchimagecontainer_1 h2 {
+    margin-top: 15px;
+}
+
+.traimg img {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.traveller {
+    width: 500px;
+    /* height: 400px; */
+    /* margin-top: 150px; */
+}
+
+.traveller button {
+    padding: 10px;
+    border-radius: 30px;
+    border-color: black;
+    margin-top: 50px;
+
+}
+
+.traveller button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #003809;
+}
+
+.travelmaincontainer_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 5%;
+}
+
+.travelmaincontainer {
+    margin-top: 3%;
+    width: 100%;
+    background-color: #003809;
+    color: white;
+
+}
+
+/* .trp1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+
+} */
+.browseimagecontainer img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.browseimagecontainer {
+    width: 250px;
+    height: 400px;
+
+}
+
+.Browsethemedcollections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.btch1 {
+    margin-left: 12%;
+}
+
+.Browsethemedcollectionsmaincontainer {
+    margin-top: 50px;
+}
+
+.fmaincnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* .ftolelcontainer {
+    background-color: lightgrey;
+} */
+footer{
+    background-color: lightgray;
+    padding: 15px;
+}
+.Fdh {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.fdh6 {
+    gap: 50px;
+}
+.fbdes{
+    margin-top: 20px;
+    padding: 15px;
+}
+.fdpah{
+    font-size: 14px;
 }
