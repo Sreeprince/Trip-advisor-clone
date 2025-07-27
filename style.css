@@ -29,10 +29,31 @@ body {
 
 }
 
+.Container svg {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.heading:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+
 .menu {
     display: flex;
     align-items: center;
     gap: 10px;
+    /* flex-wrap: wrap; */
+
+}
+
+.menu p:hover {
+    cursor: pointer;
+    color: #003809;
+    font-weight: bold;
 
 }
 
@@ -50,6 +71,15 @@ body {
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+}
+
+.sign button:hover {
+    background-color: rgb(199, 199, 199);
+    color: #003809;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
 }
 
 .Where {
@@ -70,6 +100,12 @@ body {
     justify-content: center;
     gap: 20px;
 
+}
+
+.search__bar_menu p:hover {
+    color: #003809;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 .Search__ContainerOverAllBOX {
@@ -187,6 +223,13 @@ body {
 
 }
 
+.imagecontainer img:hover {
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 .tripcoverimages {
     display: flex;
     justify-content: center;
@@ -240,10 +283,11 @@ body {
 }
 
 .trh6 {
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(224, 224, 224);
     padding: 10px;
     border-radius: 10px;
     display: inline;
+    font-size: 8;
 }
 
 .trp {
@@ -266,6 +310,11 @@ body {
 
 }
 
+.tripdescription img:hover {
+    opacity: 0.8;
+    background-color: black;
+}
+
 .Explore {
     margin-top: 8px;
     /* margin-left: 25px; */
@@ -278,8 +327,16 @@ body {
     width: 280px;
     height: 280px;
     gap: 50px;
+}
 
+.Exploredescription img:hover {
+    opacity: 0.5;
+    background-color: black;
 
+}
+
+.Exploredescription h4:hover {
+    cursor: pointer;
 }
 
 .Exploreimagecontainer_1 {
@@ -368,6 +425,11 @@ body {
     border-radius: 15px;
 }
 
+.Landimagecontainer img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .Landimagecontainer {
     width: 350px;
     height: 250px;
@@ -402,10 +464,19 @@ body {
     border-radius: 25px;
 }
 
+.Thingmaincontainer_1 img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .Thingmaincontainer_1 {
     width: 280px;
     flex-wrap: wrap;
 
+}
+
+.Thingmaincontainer_1 h4 {
+    cursor: pointer;
 }
 
 .Thingmaincontainer {
@@ -590,6 +661,11 @@ h3 {
     border-radius: 15px;
 }
 
+.browseimagecontainer img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .browseimagecontainer {
     width: 250px;
     height: 400px;
@@ -612,36 +688,377 @@ h3 {
     margin-top: 50px;
 }
 
+.browseimagecontainer p:hover {
+    cursor: pointer;
+    color: #003809;
+}
+
 .fmaincnt {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    /* align-items: center; */
+    gap: 50px;
 }
 
 /* .ftolelcontainer {
     background-color: lightgrey;
 } */
-footer{
+footer {
     background-color: lightgray;
     padding: 15px;
 }
+
 .Fdh {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
+    /* align-items: center; */
+    gap: 25px;
     width: 600px;
+    /* height: 200px; */
     flex-wrap: wrap;
+    /* font-size: 14px; */
 }
 
 .fdh6 {
-    gap: 50px;
+    gap: 5px;
 }
-.fbdes{
+
+.fdh6 a {
+    color: #003809;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.fbdes {
     margin-top: 20px;
     padding: 15px;
 }
-.fdpah{
-    font-size: 14px;
+
+.fdpah {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.timg {
+    position: relative;
+    top: 100px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+}
+
+.timg img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.footerpcontainer p {
+    font-size: 15px;
+
+}
+
+.footerpcontainer P:hover {
+    cursor: pointer;
+    color: #003809;
+}
+
+.footerpcontainer P a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+
+    body {
+        font: 10px;
+        ;
+
+    }
+
+
+
+    .Container {
+
+        font-size: 13px;
+    }
+
+
+    .sign button {
+        font-size: 8px;
+        padding: 10px;
+    }
+
+    .sign p {
+        width: 40px;
+    }
+
+    .Where h1 {
+        width: 20%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Container {
+        justify-content: flex-start;
+    }
+
+    .Container svg {
+        display: block;
+        position: relative;
+        left: 50%;
+    }
+
+    .Container h1 {
+        font-size: 30px;
+    }
+
+    .Where h1 {
+        display: none;
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search__bar_menu {
+        display: none;
+    }
+
+    .search-container {
+        margin: 0;
+        position: absolute;
+        top: 12%;
+        width: 85%;
+    }
+
+    .sign {
+        display: none;
+    }
+
+    .imagecontaineroverall {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .imagecontainer {
+        top: 0px;
+        z-index: 2;
+    }
+
+    .imagecard h1 {
+        font-size: 18px;
+        /* width: 50%; */
+    }
+
+    .imagecontainer img {
+        width: 300px;
+        height: 225px;
+    }
+
+
+    .imagecontainer .imagecard button {
+        padding: 8px;
+        margin-left: 15px;
+        font-size: 8px;
+        margin-top: 15px;
+
+    }
+
+    .imagecard button {
+        /* position: relative;
+        top: 150px; */
+        /* bottom: 250px; */
+        /* right: 150px; */
+        padding: 15px;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .imagecontainer {
+        width: 60%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagecontaineroverall {
+        height: 300px;
+    }
+
+    .Find h2 {
+        font-size: 16px;
+        text-align: , center;
+
+    }
+
+    .Find {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .tripcoverimages {
+        flex-wrap: wrap;
+        flex-basis: 10%;
+    }
+
+    .tripdescription img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .tripdescription h2 {
+        font-size: 12px;
+        position: absolute;
+        top: 70px;
+    }
+
+    .tripmaincontainer {
+        flex-grow: 50%;
+        font-size: 12px;
+    }
+
+    .tripimagecontainer img {
+        position: relative;
+        top: 50px;
+    }
+
+    .trh6 {
+        position: relative;
+        right: 35%;
+    }
+
+    .Explore h2,
+    p {
+        margin-right: 10px;
+        font-size: 12px;
+        align-content: center;
+    }
+
+    .Exploredescription {
+        flex-wrap: wrap;
+        flex-basis: 40%;
+    }
+
+    .Exploreimagecontainer_1 .Exploredescription img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .Exploreimagecontainer_1 {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Exploreimagecontainer {
+        font-size: 12px;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+    }
+
+    .frgnmaincontainer {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .lndmaincontr h2 {
+        font-size: 16px;
+        position: relative;
+        left: 25%;
+
+
+    }
+
+    .Landimagecontainer img {
+        width: 150px;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .Landimagecontainer p {
+        font-size: 12px;
+    }
+
+    .lndmaincontr {
+        position: relative;
+        bottom: 125px;
+        /* display: table; */
+        clear: both;
+        overflow: hidden;
+    }
+
+    .lndmaincontr {
+        margin-top: 50px;
+        width: 500px;
+        height: 200px;
+    }
+
+    .timg img {
+        margin-top: 10px;
+        display: none;
+    }
+
+    .footerpcontainer p {
+        font-size: 12px;
+    }
+
+    .fdpah {
+        font-size: 12px;
+    }
+
+    .Fdh {
+        flex-basis: 1;
+        display: flex;
+
+    }
+
+    .fdh6 a {
+        font-size: 11px;
+        flex-wrap: wrap;
+
+    }
+
+    .thnghmainercontainer {
+        font-size: 12px;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+    }
+
+    .Thingmaincontainer {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        flex-wrap: wrap;
+        /* flex-basis: 40%; */
+    }
+
+    .Thingmaincontainer_1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Thingmaincontainer_1 {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 40%;
+    }
+
+    .thnghmainercontainer {
+        position: relative;
+        bottom: 120px;
+    }
+
+    .Yournxttrip {
+        font-size: 12px;
+        position: relative;
+        top: 0;
+    }
 }
