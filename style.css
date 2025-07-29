@@ -171,7 +171,6 @@ body {
 .imagecontainer {
     display: flex;
     background-color: rgb(227, 40, 227);
-    /* flex-wrap: wrap; */
     align-items: center;
     width: 1100px;
     height: 500px;
@@ -509,9 +508,9 @@ body {
 /* .wedimage_1{
     width: 280px;
     height:100%;
-    flex-wrap: wrap; */
+    flex-wrap: wrap; 
 
-}
+}*/
 
 .wedimage_1 img {
     width: 280px;
@@ -769,296 +768,245 @@ footer {
     text-decoration: none;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:480px) {
 
-    body {
-        font: 10px;
-        ;
-
-    }
-
-
-
-    .Container {
-
-        font-size: 13px;
-    }
-
-
-    .sign button {
-        font-size: 8px;
-        padding: 10px;
-    }
-
-    .sign p {
-        width: 40px;
-    }
-
-    .Where h1 {
-        width: 20%;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .Container {
-        justify-content: flex-start;
-    }
-
-    .Container svg {
-        display: block;
-        position: relative;
-        left: 50%;
-    }
-
-    .Container h1 {
-        font-size: 30px;
-    }
-
-    .Where h1 {
-        display: none;
-
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .search__bar_menu {
-        display: none;
-    }
-
-    .search-container {
-        margin: 0;
-        position: absolute;
-        top: 12%;
-        width: 85%;
-    }
-
+    .menu,
     .sign {
         display: none;
     }
 
-    .imagecontaineroverall {
-        width: 100%;
-        font-size: 16px;
+    .heading {
+        font-size: xx-large;
     }
 
-    .imagecontainer {
-        top: 0px;
-        z-index: 2;
+    .searchbar {
+        display: none;
     }
 
-    .imagecard h1 {
-        font-size: 18px;
-        /* width: 50%; */
+    /* .imagecontaineroverall {
+        width: 50%;
+        margin-left: 20px;
+
+    }
+
+    .imagecard {
+        font-size:16px ;
     }
 
     .imagecontainer img {
-        width: 300px;
-        height: 225px;
-    }
-
-
-    .imagecontainer .imagecard button {
-        padding: 8px;
-        margin-left: 15px;
-        font-size: 8px;
-        margin-top: 15px;
-
-    }
-
-    .imagecard button {
-        /* position: relative;
-        top: 150px; */
-        /* bottom: 250px; */
-        /* right: 150px; */
-        padding: 15px;
-        margin-top: 25px;
-        font-size: 14px;
-    }
+        width: 400px;
+        height: 250px;
+    } */
 
     .imagecontainer {
-        width: 60%;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
+        /* background-color: transparent; */
+        flex-direction: column;
+        /* stack image above text */
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: 430px;
     }
 
-    .imagecontaineroverall {
-        height: 300px;
+    .imagecontainer img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: 15px;
+        /* prevent it from being too big */
     }
 
-    .Find h2 {
-        font-size: 16px;
-        text-align: , center;
+    .imagecontainer h1 {
+        font-size: 1.5rem;
+        /* smaller font for mobile */
+        line-height: 1.2;
+        margin: 10px 0;
+    }
 
+    .imagecontainer button {
+        width: 250px;
+        margin-bottom: 25px;
+        line-height: 1.8;
+        margin: 10px 10;
     }
 
     .Find {
-        margin-top: 10px;
-        margin-left: 10px;
         font-size: 14px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        text-align: center;
     }
 
     .tripcoverimages {
         flex-wrap: wrap;
-        flex-basis: 10%;
+        flex-direction: row;
     }
 
-    .tripdescription img {
-        height: 100px;
-        width: 100px;
+    .tripcoverimages img {
+        width: 200px;
+        height: 200px;
     }
 
+    .tripdescription {
+        flex-wrap: wrap;
+        position: relative;
+        /* flex: 1 1 calc(25% - 20px); */
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    /* .tripdescription img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+} */
+
+    /* Text Styling */
     .tripdescription h2 {
-        font-size: 12px;
         position: absolute;
-        top: 70px;
+        bottom: 10px;
+        left: 10px;
+        margin: 0;
+        padding: 5px 10px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay for readability */
+        border-radius: 6px;
     }
 
-    .tripmaincontainer {
-        flex-grow: 50%;
-        font-size: 12px;
+    .tripmaincontainer_1 h6 {
+        font-size: 8px;
     }
 
-    .tripimagecontainer img {
+    .tripmaincontainer_1 img {
         position: relative;
-        top: 50px;
+        top: 100px;
     }
 
-    .trh6 {
+    .tripmaincontainer_1 h2 {
+        font-size: 14px;
+    }
+
+    .tripmaincontainer_1 p {
+        font-size: 14px;
+    }
+
+    .tripcointainerdescription button {
+        width: 150px;
+
+    }
+
+    /* .Exploreimagecontainer_1 img {
+        width: 150px;
+        height: 150px;
+    } */
+
+    .Exploreimagecontainer_1 .Exploredescription img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Exploreimagecontainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        right: 35%;
-    }
+        left: 25px;
 
-    .Explore h2,
-    p {
-        margin-right: 10px;
-        font-size: 12px;
-        align-content: center;
     }
 
     .Exploredescription {
         flex-wrap: wrap;
-        flex-basis: 40%;
-    }
-
-    .Exploreimagecontainer_1 .Exploredescription img {
-        height: 200px;
+        position: relative;
+        /* flex: 1 1 calc(25% - 20px); */
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 12px;
         width: 200px;
+        height: 320px;
     }
 
-    .Exploreimagecontainer_1 {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
+    .Explore {
+        text-align: center;
+        margin-right: 18rem;
     }
 
-    .Exploreimagecontainer {
+    .Explore h2 {
         font-size: 12px;
-        flex-wrap: wrap;
-        flex-basis: 30%;
+    }
+
+    .Explore p {
+        font-size: 14px;
     }
 
     .frgnmaincontainer {
-        position: relative;
-        bottom: 100px;
+        margin-top: 0px;
     }
 
-    .lndmaincontr h2 {
+    .frgnmaincontainer_1 .fh2 h2 {
         font-size: 16px;
+    }
+
+    .frgnmaincontainer_1 img {
         position: relative;
-        left: 25%;
+        top: 5rem;
+    }
 
-
+    .fbutton {
+        width: 150px;
     }
 
     .Landimagecontainer img {
         width: 150px;
         height: 100px;
-        border-radius: 15px;
+    }
+
+    .Landimagecontainer {
+        width: 150px;
+        height: 150px;
+    }
+
+    .lndmaincontr {
+        margin-top: 10px;
+        height: 230px;
+        position: relative;
+        right: 0.6rem;
     }
 
     .Landimagecontainer p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    .lndmaincontr {
-        position: relative;
-        bottom: 125px;
-        /* display: table; */
-        clear: both;
-        overflow: hidden;
+    .landscapeimagecontainer_1 {
+        gap: 5px;
+        margin-right: 0px;
     }
 
-    .lndmaincontr {
-        margin-top: 50px;
-        width: 500px;
-        height: 200px;
-    }
-
-    .timg img {
-        margin-top: 10px;
-        display: none;
-    }
-
-    .footerpcontainer p {
-        font-size: 12px;
-    }
-
-    .fdpah {
-        font-size: 12px;
-    }
-
-    .Fdh {
-        flex-basis: 1;
-        display: flex;
-
-    }
-
-    .fdh6 a {
-        font-size: 11px;
-        flex-wrap: wrap;
-
-    }
-
-    .thnghmainercontainer {
-        font-size: 12px;
-        flex-wrap: wrap;
-        flex-basis: 30%;
-    }
-
-    .Thingmaincontainer {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        flex-wrap: wrap;
-        /* flex-basis: 40%; */
-    }
-
-    .Thingmaincontainer_1 img {
+    .Thingmaincontainer img {
         width: 200px;
         height: 200px;
     }
 
-    .Thingmaincontainer_1 {
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .Thingmaincontainer {
         flex-wrap: wrap;
-        flex-basis: 40%;
+        margin-top: 15px;
     }
 
+    .Thingmaincontainer_1 {
+        flex-direction: row;
+        flex-basis: 35%;
+    }
+    .thh2, .thnp {
+        margin-left: 1.5rem;
+    }
     .thnghmainercontainer {
-        position: relative;
-        bottom: 120px;
-    }
-
-    .Yournxttrip {
-        font-size: 12px;
-        position: relative;
-        top: 0;
+        margin-top: 12px;
+        text-align: center;
     }
 }
